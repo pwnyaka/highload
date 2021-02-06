@@ -1,0 +1,277 @@
+# Percona Toolkit MySQL Summary Report #######################
+              System time | 2021-02-06 17:21:30 UTC (local TZ: +04 +0400)
+# Instances ##################################################
+  Port  Data Directory             Nice OOM Socket
+  ===== ========================== ==== === ======
+# MySQL Executable ###########################################
+       Path to executable | /usr/sbin/mysqld
+              Has symbols | No
+# Slave Hosts ################################################
+No slaves found
+# Report On Port 3306 ########################################
+                     User | root@localhost
+                     Time | 2021-02-06 21:21:30 (+04)
+                 Hostname | vasiliy-VirtualBox
+                  Version | 8.0.22-13 Percona Server (GPL), Release '13', Revision '6f7822f'
+                 Built On | Linux x86_64
+                  Started | 2021-02-06 16:47 (up 0+04:33:55)
+                Databases | 5
+                  Datadir | /var/lib/mysql/
+                Processes | 4 connected, 2 running
+              Replication | Is not a slave, has 0 slaves connected
+                  Pidfile | /var/run/mysqld/mysqld.pid (exists)
+# Processlist ################################################
+
+  Command                        COUNT(*) Working SUM(Time) MAX(Time)
+  ------------------------------ -------- ------- --------- ---------
+  Daemon                                1       1     17500     17500
+  Query                                 1       1         0         0
+  Sleep                                 3       0       300       100
+
+  User                           COUNT(*) Working SUM(Time) MAX(Time)
+  ------------------------------ -------- ------- --------- ---------
+  event_scheduler                       1       1     17500     17500
+  root                                  1       1         0         0
+  test                                  3       0         0         0
+
+  Host                           COUNT(*) Working SUM(Time) MAX(Time)
+  ------------------------------ -------- ------- --------- ---------
+  192.168.1.244                         3       0         0         0
+  localhost                             2       2     17500     17500
+
+  db                             COUNT(*) Working SUM(Time) MAX(Time)
+  ------------------------------ -------- ------- --------- ---------
+  NULL                                  2       2     17500     17500
+  skytech                               3       0         0         0
+
+  State                          COUNT(*) Working SUM(Time) MAX(Time)
+  ------------------------------ -------- ------- --------- ---------
+                                        3       0         0         0
+  init                                  1       1         0         0
+  Waiting on empty queue                1       1     17500     17500
+
+# Status Counters (Wait 10 Seconds) ##########################
+Variable                                Per day  Per second     11 secs
+Aborted_connects                             80                        
+Binlog_snapshot_position                 900000          10            
+Binlog_cache_use                             20                        
+Binlog_stmt_cache_disk_use                    5                        
+Binlog_stmt_cache_use                       150                        
+Bytes_received                          1500000          15         500
+Bytes_sent                              3000000          35        3000
+Com_alter_user                                5                        
+Com_change_db                                25                        
+Com_create_db                                10                        
+Com_create_table                            225                        
+Com_create_user                               5                        
+Com_drop_table                               45                        
+Com_flush                                    10                        
+Com_grant                                     5                        
+Com_insert                                   45                        
+Com_select                                  800                       2
+Com_set_option                              150                        
+Com_show_binlogs                             15                        
+Com_show_charsets                            10                        
+Com_show_collations                          10                        
+Com_show_create_table                        25                        
+Com_show_databases                           45                        
+Com_show_engine_status                       15                        
+Com_show_fields                              90                        
+Com_show_master_status                       15                        
+Com_show_plugins                             15                        
+Com_show_processlist                         15                        
+Com_show_replicas                            15                        
+Com_show_slave_hosts                         15                        
+Com_show_replica_status                      15                        
+Com_show_slave_status                        15                        
+Com_show_status                              60                        
+Com_show_storage_engines                     25                        
+Com_show_table_status                        25                        
+Com_show_tables                              25                        
+Com_show_variables                           45                        
+Com_show_warnings                            35                        
+Connections                                 600                       1
+Created_tmp_disk_tables                      30                        
+Created_tmp_files                            30                        
+Created_tmp_tables                          250                        
+Error_log_buffered_bytes                  15000                        
+Error_log_buffered_events                   100                        
+Error_log_latest_write              8000000000000000 100000000000            
+Flush_commands                               15                        
+Handler_commit                             4500                        
+Handler_external_lock                     50000                       2
+Handler_prepare                              80                        
+Handler_read_first                          600                        
+Handler_read_key                          17500                       1
+Handler_read_next                         30000                        
+Handler_read_rnd                            200                        
+Handler_read_rnd_next                    125000           1         100
+Handler_update                             1750                        
+Handler_write                             70000                      50
+Innodb_buffer_pool_bytes_data          80000000        1000        3000
+Innodb_buffer_pool_pages_flushed           1500                        
+Innodb_buffer_pool_pages_made_young           5                        
+Innodb_buffer_pool_pages_old               2000                        
+Innodb_buffer_pool_read_requests         125000           1           8
+Innodb_buffer_pool_reads                   4500                        
+Innodb_buffer_pool_write_requests         12500                       4
+Innodb_checkpoint_max_age             400000000        5000            
+Innodb_data_fsyncs                          900                        
+Innodb_data_read                       70000000         800            
+Innodb_data_reads                          4500                        
+Innodb_data_writes                         2000                        
+Innodb_data_written                    25000000         300        4500
+Innodb_dblwr_pages_written                  600                        
+Innodb_dblwr_writes                         200                        
+Innodb_ibuf_segment_size                     10                        
+Innodb_log_write_requests                  6000                        
+Innodb_log_writes                           400                        
+Innodb_lsn_current                    100000000        1000            
+Innodb_lsn_flushed                    100000000        1000            
+Innodb_lsn_last_checkpoint            100000000        1000            
+Innodb_master_thread_active_loops            90                        
+Innodb_master_thread_idle_loops           90000                        
+Innodb_max_trx_id                         10000                        
+Innodb_os_log_fsyncs                        350                        
+Innodb_os_log_written                    500000           5            
+Innodb_pages_created                        800                        
+Innodb_pages_read                          4500                        
+Innodb_pages0_read                           35                        
+Innodb_pages_written                       1500                        
+Innodb_purge_trx_id                       10000                        
+Innodb_rows_inserted                       1500                       4
+Innodb_rows_read                           1500                       4
+Innodb_system_rows_inserted                 450                        
+Innodb_system_rows_read                   35000                       2
+Innodb_system_rows_updated                 1750                        
+Innodb_num_open_files                        60                        
+Innodb_undo_tablespaces_total                10                        
+Innodb_undo_tablespaces_implicit             10                        
+Innodb_undo_tablespaces_active               10                        
+Innodb_secondary_index_triggered_cluster_reads       15000                        
+Mysqlx_port                              175000           2            
+Mysqlx_ssl_ctx_verify_mode                   25                        
+Mysqlx_worker_threads                        10                        
+Open_table_definitions                      350                        
+Opened_files                                300                        
+Opened_table_definitions                    600                        
+Opened_tables                              1750                        
+Performance_schema_session_connect_attrs_longest_seen         700                        
+Queries                                    2250                       4
+Questions                                  2250                       4
+Select_full_join                             80                        
+Select_scan                                 600                        
+Sort_rows                                  4000                        
+Sort_scan                                   200                        
+Table_locks_immediate                       225                        
+Table_open_cache_hits                     25000                       1
+Table_open_cache_misses                    1750                        
+Threads_created                              25                        
+Uptime                                    90000           1           1
+# Table cache ################################################
+                     Size | 4000
+                    Usage | 6%
+# Key Percona Server features ################################
+      Table & Index Stats | Disabled
+     Multiple I/O Threads | Enabled
+     Corruption Resilient | Enabled
+      Durable Replication | Not Supported
+     Import InnoDB Tables | Not Supported
+     Fast Server Restarts | Not Supported
+         Enhanced Logging | Disabled
+     Replica Perf Logging | Disabled
+      Response Time Hist. | Not Supported
+          Smooth Flushing | Not Supported
+      HandlerSocket NoSQL | Not Supported
+           Fast Hash UDFs | Unknown
+# Percona XtraDB Cluster #####################################
+# Plugins ####################################################
+       InnoDB compression | ACTIVE
+# Schema #####################################################
+Specify --databases or --all-databases to dump and summarize schemas
+# Noteworthy Technologies ####################################
+                      SSL | No
+     Explicit LOCK TABLES | No
+           Delayed Insert | No
+          XA Transactions | No
+              NDB Cluster | No
+      Prepared Statements | No
+ Prepared statement count | 0
+# InnoDB #####################################################
+                  Version | 8.0.22-13
+         Buffer Pool Size | 128.0M
+         Buffer Pool Fill | 10%
+        Buffer Pool Dirty | 0%
+           File Per Table | ON
+                Page Size | 16k
+            Log File Size | 2 * 48.0M = 96.0M
+          Log Buffer Size | 16M
+             Flush Method | fsync
+      Flush Log At Commit | 1
+               XA Support | 
+                Checksums | 
+              Doublewrite | ON
+          R/W I/O Threads | 4 4
+             I/O Capacity | 200
+       Thread Concurrency | 0
+      Concurrency Tickets | 5000
+       Commit Concurrency | 0
+      Txn Isolation Level | 
+        Adaptive Flushing | ON
+      Adaptive Checkpoint | 
+           Checkpoint Age | 0
+             InnoDB Queue | 0 queries inside InnoDB, 0 queries in queue
+       Oldest Transaction | 0 Seconds
+         History List Len | 0
+               Read Views | 0
+         Undo Log Entries | 0 transactions, 0 total undo, 0 max undo
+        Pending I/O Reads | 0 buf pool reads, 0 normal AIO, 0 ibuf AIO, 0 preads
+       Pending I/O Writes | 0 buf pool (0 LRU, 0 flush list, 0 page); 0 AIO, 0 sync, 0 log IO (0 log, 0 chkp); 0 pwrites
+      Pending I/O Flushes | 0 buf pool, 0 log
+       Transaction States | 4xnot started
+# MyISAM #####################################################
+                Key Cache | 8.0M
+                 Pct Used | 20%
+                Unflushed | 0%
+# Security ###################################################
+                    Users | 2 users, 0 anon, 0 w/o pw, 1 old pw
+            Old Passwords | 
+# Encryption #################################################
+No keyring plugins found
+# Binary Logging #############################################
+                  Binlogs | 2
+               Zero-Sized | 0
+               Total Size | 170.7k
+            binlog_format | ROW
+         expire_logs_days | 0
+              sync_binlog | 1
+                server_id | 1
+             binlog_do_db | 
+         binlog_ignore_db | 
+# Noteworthy Variables #######################################
+     Auto-Inc Incr/Offset | 1/1
+   default_storage_engine | InnoDB
+               flush_time | 0
+             init_connect | 
+                init_file | 
+                 sql_mode | ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+         join_buffer_size | 256k
+         sort_buffer_size | 256k
+         read_buffer_size | 128k
+     read_rnd_buffer_size | 256k
+       bulk_insert_buffer | 0.00
+      max_heap_table_size | 16M
+           tmp_table_size | 16M
+       max_allowed_packet | 64M
+             thread_stack | 280k
+                      log | 
+                log_error | /var/log/mysql/error.log
+             log_warnings | 
+         log_slow_queries | 
+log_queries_not_using_indexes | OFF
+        log_slave_updates | ON
+# Configuration File #########################################
+              Config File | /etc/mysql/my.cnf
+# Memory management library ##################################
+jemalloc is not enabled in mysql config for process with id 7389
+# The End ####################################################
